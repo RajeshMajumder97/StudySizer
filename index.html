@@ -13,16 +13,22 @@
   <meta property="og:image" content="thumbnail.jpg">
   <title>StudySizer: Sample Size Calculator</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
+     body {
+      background: radial-gradient(circle at top left, #a1c4fd, #c2e9fb, #fbc2eb, #a6c1ee);
+      background-size: 200% 200%;
+      animation: moveBackground 15s ease infinite;
+      color: #222;
+     }
+
+    @keyframes moveBackground {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+     }
     header {
-      background: #48D1CC;
+      background-image: url('D:/ChatGPT Image Jul 1, 2025, 09_27_37 PM.jpeg');
+      background-size: cover;
+      background-position: center;
       color: white;
       padding: 2rem;
       text-align: center;
@@ -92,27 +98,40 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>StudySizer: A Sample Size Calculator</h1>
-    <p>Comprehensive sample size calculator for a wide range of study designs</p>
-    <a href="https://studysizer.streamlit.app" class="launch-btn" target="_blank">🚀 Launch StudySizer</a>
-  </header>
+<header>
+  <h1 style="font-size: 3.5rem; font-weight: 800;">StudySizer</h1>
+  <h1 style="font-size: 2rem; margin-top: -1rem;">A Sample Size Calculator</h1>
+  <p style="font-size: 1.1rem;">Comprehensive sample size calculator for a wide range of study designs</p>
+  <a href="https://studysizer.streamlit.app" class="launch-btn" target="_blank">🚀 Launch StudySizer</a>
+</header>
   <main>
     <section>
       <h2>Why StudySizer?</h2>
       <p>This open-source and free web application, hosted on Streamlit, enables researchers, students, and professionals to calculate the required sample size for a wide range of study designs. With a clean, user-friendly interface, the app supports various statistical methods tailored to public health and biomedical research. One of its standout features is that it not only provides the calculated sample size but also displays the relevant formulas and academic references — making it both a practical and educational tool.</p>
     </section>
 
+<section>
+  <h2>Advantages of Using StudySizer</h2>
+  <ul>
+    <li><strong>All-in-One Platform:</strong> Supports a wide variety of sample size scenarios — including estimation, comparison, correlation, regression, and survival analysis.</li>
+    <li><strong>Educational Tool:</strong> Shows complete formulas and references, making it suitable for academic learning and classroom use.</li>
+    <li><strong>Simple Input Design:</strong> Uses clear and structured input fields — making it easier to enter precise values.</li>
+    <li><strong>Session History:</strong> Automatically tracks your previous entries and calculations, allowing you to revisit and regenerate past results instantly.</li>
+    <li><strong>Fast & Clear Output:</strong> Provides instant, well-formatted results based on your inputs with minimal effort.</li>
+    <li><strong>Download Results Easily:</strong> Export your results directly as a clean, shareable PDF — perfect for reports or documentation.</li>
+    <li><strong>Free and Open Source:</strong> No signup, no cost — completely free to use online.</li>
+    <li><strong>Device Friendly:</strong> Works well on both desktops and mobile devices with a responsive layout.</li>
+  </ul>
+</section>
+
+
     <section>
-      <h2>About the Developer</h2>
+      <h2>📬 About the Developer</h2>
       <p><strong>Rajesh Majumder</strong> – Statistician, St. John's Research Institute, India </p>
       <p>Email: <a href="mailto:rajeshnbp9051@gmail.com">rajeshnbp9051@gmail.com</a><br>
       Blog: <a href="https://rajeshmajumderblog.netlify.app">rajeshmajumderblog.netlify.app</a></p>
     </section>
-    <section>
-      <p>If you find this tool useful, please cite it as:</p>
-      <p><i>StudySizer: A Sample Size Calculator, developed by Rajesh Majumder (<a href="https://studysizer.netlify.app/" target="_blank">https://studysizer.netlify.app/</a>)</i></p>
-    </section>
+
 <hr>
 
 <h1>Understanding Sample Size in Public Health Research: A Practical Guide</h1>
@@ -127,12 +146,10 @@
 
 <p>For instance, if you're studying anemia prevalence among schoolchildren in a city, you don’t need to test all 50,000. A carefully calculated sample of a few hundred will likely give you the insights you need.</p>
 
-
 <h2>Why Sample Size Matters</h2>
 <p>Too small a sample, and you might miss important effects. Too large, and you waste resources. In public health — where time, budget, and ethical considerations matter — getting the sample size right is essential.</p>
 
 <p>A good sample size ensures that your study has enough <strong>statistical power</strong> to detect a real effect (if there is one), while keeping the <strong>margin of error</strong> within acceptable limits.</p>
-
 
 <h2>Two Approaches to Sample Size Calculation</h2>
 
@@ -177,7 +194,6 @@ Z<sub>1−β</sub> = for power.</p>
 <h4>Example:</h4>
 <p>To detect a 1 g/dL difference in hemoglobin between two iron therapies with 80% power and 95% confidence, you'd need about 63 participants per group.</p>
 
-
 <h2>Comparison Table: Precision vs. Effect-Based</h2>
 
 <table>
@@ -208,14 +224,13 @@ Z<sub>1−β</sub> = for power.</p>
   </tr>
 </table>
 
-
 <h2>Tips for Public Health Researchers</h2>
 
 <ul>
-  <li>Use pilot data to estimate prevalence or standard deviation.</li>
-  <li>Always add 10–20% extra for expected dropout or non-response.</li>
-  <li>Use tools like <a href="https://studysizer.streamlit.app" target="_blank">StudySizer</a>, OpenEpi, or Epi Info to make calculations faster.</li>
-  <li>Talk to a statistician for complex designs or cluster sampling.</li>
+  <li>📊 Use pilot data to estimate prevalence or standard deviation.</li>
+  <li>🎯 Always add 10–20% extra for expected dropout or non-response.</li>
+  <li>🧮 Use tools like <a href="https://studysizer.streamlit.app" target="_blank">StudySizer</a>, OpenEpi, or Epi Info to make calculations faster.</li>
+  <li>👥 Talk to a statistician for complex designs or cluster sampling.</li>
 </ul>
 
 <h2>Conclusion</h2>
