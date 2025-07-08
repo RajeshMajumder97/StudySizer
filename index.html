@@ -6,7 +6,7 @@
   <meta name="description" content="Free online sample size calculator for Public Health and Medical research.">
   <meta name="keywords" content="sample size calculator">
   <meta name="author" content="Rajesh Majumder">
-  <meta property="og:title" content="StudySizer: Sample Size Calculator">
+  <meta property="og:title" content="🧮 StudySizer: Sample Size Calculator">
   <meta property="og:description" content="Estimate sample size for different studies">
   <meta property="og:url" content="https://studysizer.streamlit.app">
   <meta property="og:type" content="website">
@@ -26,13 +26,36 @@
       100% { background-position: 0% 50%; }
      }
     header {
-      background-image: url('Cover Image.jpeg');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
+  position: relative;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  height: 400px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Background image with transparency */
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('Cover Image.jpeg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* <-- controls background transparency only */
+  z-index: 0;
+}
+
+/* Ensure inner content appears above the background */
+header * {
+  position: relative;
+  z-index: 1;
+}
     main {
       padding: 2rem;
       max-width: 1000px;
@@ -98,8 +121,9 @@
   </style>
 </head>
 <body>
+
 <header>
-  <h1 style="font-size: 3.5rem; font-weight: 800;">StudySizer</h1>
+  <img src="D:\Sample-Size-Calculator\image.png" alt="StudySizer Logo" style="display: block; margin: 0 auto; max-height: 100px; margin-bottom: 10px; opacity = 1"/>
   <h1 style="font-size: 2rem; margin-top: -1rem;">A Sample Size Calculator</h1>
   <p style="font-size: 1.1rem;">Comprehensive sample size calculator for a wide range of study designs</p>
   <a href="https://studysizer.streamlit.app" class="launch-btn" target="_blank">🚀 Launch StudySizer</a>
